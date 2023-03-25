@@ -185,7 +185,7 @@ function CodeBlock({ codeBlock, theme, sx }: { codeBlock: CodeMessageBlock, them
 
 function prettyBaseModel(model: string): string {
   if (model.startsWith('gpt-4')) return 'turbo';
-  if (model.startsWith('gpt-3.5-turbo')) return ' ';
+  if (model.startsWith('gpt-3.5-turbo')) return 'cutest';
   return model;
 }s
 
