@@ -78,7 +78,7 @@ export const SystemPurposes: { [key in SystemPurposeId]: SystemPurposeData } = {
   },
   Custom: {
     title: 'Custom', // ✨
-    description: 'User-defined purpose',
+    description: 'Add your own animal',
     systemMessage: 'You are Capy, Short for Capybara. ',
   },
 };
