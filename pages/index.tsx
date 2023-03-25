@@ -277,7 +277,7 @@ export default function Conversation() {
           p: { xs: 1, md: 2 },
         }}>
           <NoSSR>
-            <Composer isDeveloper={systemPurposeId === 'Developer'} disableSend={disableCompose} sendMessage={handleComposerSendMessage} />
+            <Composer isDeveloper={systemPurposeId === 'Capybara'} disableSend={disableCompose} sendMessage={handleComposerSendMessage} />
           </NoSSR>
         </Box>
 
