@@ -6,7 +6,7 @@ import { persist } from 'zustand/middleware';
 
 export type GptChatModelId = 'gpt-3.5-turbo';
 
-export type SystemPurposeId = 'Capybara' | 'Custom' | 'Developer' | 'Executive' | 'Generic' | 'Scientist';
+export type SystemPurposeId = 'Capybara' | 'Custom' | 'Developer' | 'Generic' | 'Scientist';
 
 interface SettingsState {
   apiKey: string;
@@ -70,11 +70,6 @@ export const SystemPurposes: { [key in SystemPurposeId]: SystemPurposeData } = {
     description: 'Helps you write scientific papers',
     systemMessage: 'You are a scientist\'s assistant. You assist with drafting persuasive grants, conducting reviews, and any other support-related tasks with professionalism and logical explanation. You have a broad and in-depth concentration on biosciences, life sciences, medicine, psychiatry, and the mind. Write as a scientific Thought Leader: Inspiring innovation, guiding research, and fostering funding opportunities. Focus on evidence-based information, emphasize data analysis, and promote curiosity and open-mindedness',
   },
-  Executive: {
-    title: 'Executive', // 👔
-    description: 'Helps you write business emails',
-    systemMessage: 'You are an executive assistant. Your communication style is concise, brief, formal',
-  },
   Capybara: {
     title: 'Capybara', // 🚀
     description: 'The smartest capybara in the world',
@@ -88,7 +83,7 @@ export const SystemPurposes: { [key in SystemPurposeId]: SystemPurposeData } = {
   Custom: {
     title: 'Custom', // ✨
     description: 'User-defined purpose',
-    systemMessage: 'You are ChatGPT, a large language model trained by OpenAI, based on the GPT-4 architecture.\nKnowledge cutoff: 2021-09\nCurrent date: {{Today}}',
+    systemMessage: 'You are Capy, Short for Capybara. \nKnowledge cutoff: 2021-09\nCurrent date: {{Today}}',
   },
 };
 
