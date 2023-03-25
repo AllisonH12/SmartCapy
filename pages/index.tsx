@@ -13,7 +13,7 @@ import { GptChatModels, SystemPurposeId, SystemPurposes, useSettingsStore } from
 import { Message, UiMessage } from '../components/Message';
 import { NoSSR } from '../components/util/NoSSR';
 import { isValidOpenAIApiKey, Settings } from '../components/Settings';
-import logoImage from '../assets/logod.png';
+
 
 
 /// UI Messages configuration
@@ -219,8 +219,7 @@ export default function Conversation() {
           }} onDoubleClick={handleListClear}>
             <NoSSR>
              {/* {GptChatModels[chatModelId]?.title || 'Select Model'} <span style={{ opacity: 0.5 }}> ·</span> {SystemPurposes[systemPurposeId].title} */}
-             <img src={logoImage} alt="Logo" style={{ textAlign: 'center', my: 'auto', flexGrow: 1,}} onDoubleClick={handleListClear}/>
-
+            Capybara Chat
 
             </NoSSR>
           </Typography>
