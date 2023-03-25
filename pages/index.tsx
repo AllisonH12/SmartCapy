@@ -238,7 +238,7 @@ export default function Conversation() {
             <Stack direction='column' sx={{ alignItems: 'center', justifyContent: 'center', minHeight: '50vh' }}>
               <Box>
                 <Typography level='body3' color='neutral'>
-                  AI purpose
+                  Your Buddy to Chat with
                 </Typography>
                 <NoSSR>
                   <Select value={systemPurposeId} onChange={(e, v) => handlePurposeChange(v)} sx={{ minWidth: '40vw' }}>
