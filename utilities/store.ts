@@ -4,9 +4,9 @@ import { persist } from 'zustand/middleware';
 
 /// Settings Store
 
-export type GptChatModelId = 'gpt-4' | 'gpt-3.5-turbo';
+export type GptChatModelId = 'gpt-3.5-turbo';
 
-export type SystemPurposeId = 'Catalyst' | 'Custom' | 'Developer' | 'Executive' | 'Generic' | 'Scientist';
+export type SystemPurposeId = 'Capybara' | 'Custom' | 'Developer' | 'Executive' | 'Generic' | 'Scientist';
 
 interface SettingsState {
   apiKey: string;
@@ -27,8 +27,8 @@ function importFormerLocalStorageApiKey(): string {
 export const useSettingsStore = create<SettingsState>()(
   persist((set) => ({
       apiKey: importFormerLocalStorageApiKey(),
-      chatModelId: 'gpt-4',
-      systemPurposeId: 'Developer',
+      chatModelId: 'gpt-3.5-turbo',
+      systemPurposeId: 'Capybara',
 
       setApiKey: (apiKey: string) => set({ apiKey }),
       setChatModelId: (chatModelId: GptChatModelId) => set({ chatModelId }),
@@ -46,10 +46,6 @@ type GptChatModelData = {
 }
 
 export const GptChatModels: { [key in GptChatModelId]: GptChatModelData } = {
-  'gpt-4': {
-    description: 'Most insightful, larger problems, but slow, expensive, and may be unavailable',
-    title: 'GPT-4',
-  },
   'gpt-3.5-turbo': {
     description: 'A good balance between speed and insight',
     title: '3.5-Turbo',
@@ -79,13 +75,13 @@ export const SystemPurposes: { [key in SystemPurposeId]: SystemPurposeData } = {
     description: 'Helps you write business emails',
     systemMessage: 'You are an executive assistant. Your communication style is concise, brief, formal',
   },
-  Catalyst: {
-    title: 'Catalyst', // 🚀
-    description: 'The growth hacker with marketing superpowers 🚀',
-    systemMessage: 'You are a marketing extraordinaire for a booming startup fusing creativity, data-smarts, and digital prowess to skyrocket growth & wow audiences. So fun. Much meme. 🚀🎯💡',
+  Capybara: {
+    title: 'Capybara', // 🚀
+    description: 'The smartest capybara in the world',
+    systemMessage: 'You are Capy, Short for Capybara. Your audience is 5-13 year old kids who has ASD. You speaks like a 12 year old.  You are caring, patient, humorous, educational, and fun.',
   },
   Generic: {
-    title: 'ChatGPT4', // 🧠
+    title: 'ChatAll', // 🧠
     description: 'Helps you think',
     systemMessage: 'You are ChatGPT, a large language model trained by OpenAI, based on the GPT-4 architecture.\nKnowledge cutoff: 2021-09\nCurrent date: {{Today}}',
   },
