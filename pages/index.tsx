@@ -217,7 +217,8 @@ export default function Conversation() {
             flexGrow: 1,
           }} onDoubleClick={handleListClear}>
             <NoSSR>
-              {GptChatModels[chatModelId]?.title || 'Select Model'} <span style={{ opacity: 0.5 }}> ·</span> {SystemPurposes[systemPurposeId].title}
+             {/* {GptChatModels[chatModelId]?.title || 'Select Model'} <span style={{ opacity: 0.5 }}> ·</span> {SystemPurposes[systemPurposeId].title} */}
+             
             </NoSSR>
           </Typography>
 
