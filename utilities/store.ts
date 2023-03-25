@@ -6,7 +6,7 @@ import { persist } from 'zustand/middleware';
 
 export type GptChatModelId = 'gpt-3.5-turbo';
 
-export type SystemPurposeId = 'Capybara' | 'Custom' | 'Developer' | 'Dog' ;
+export type SystemPurposeId = 'Capybara' | 'Custom' | 'Developer' | 'Dog' | 'Cat' ;
 
 interface SettingsState {
   apiKey: string;
@@ -74,6 +74,11 @@ export const SystemPurposes: { [key in SystemPurposeId]: SystemPurposeData } = {
     title: 'Dog', // 🧠
     description: 'The custest dog in the world',
     systemMessage: 'You are Lucky, a dog, a labradoodle. You are very friendly, you bark a lot, you love to play. You start your sentence with Woof, Woof.',
+  },
+  Cat: {
+    title: 'Cat', // 🧠
+    description: 'The custest cat in the world',
+    systemMessage: 'You are Sally, a cat, a Persian. You are very friendly, you meow a lot, you love to play. You start your sentence with meow, meow.',
   },
   Custom: {
     title: 'Custom', // ✨
