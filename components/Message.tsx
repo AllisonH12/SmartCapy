@@ -293,7 +293,8 @@ export function Message(props: { uiMessage: UiMessage, onDelete: () => void, onE
   let textBackground: string | undefined = undefined;
   if (message.role === 'system') {
     background = theme.vars.palette.background.body;
-    textBackground = theme.vars.palette.primary.plainHoverBg;
+    //textBackground = theme.vars.palette.primary.plainHoverBg;
+    textBackground = theme.vars.palette.background.body;
   } else if (message.sender === 'You') {
     background = theme.vars.palette.primary.plainHoverBg;
   } else if (message.role === 'assistant') {
