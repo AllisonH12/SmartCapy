@@ -221,11 +221,12 @@ export default function Conversation() {
              Capybara Chat
             </NoSSR>
           </Typography>
+          
           {/*
           <IconButton variant='plain' color='neutral' onClick={() => setSettingsShown(true)}>
             <SettingsOutlinedIcon />
-          */}
           </IconButton>
+          */}
         </Sheet>
 
         {/* Chat */}
