@@ -68,18 +68,18 @@ export const SystemPurposes: { [key in SystemPurposeId]: SystemPurposeData } = {
   },
   Dog: {
     title: 'Dog', // 🧠
-    description: 'The custest dog in the world',
+    description: 'The cutest dog in the world',
     systemMessage: 'You are Lucky, a dog, a labradoodle. You are very friendly, you bark a lot, you love to play. You start your sentence with Woof, Woof.',
   },
   Cat: {
     title: 'Cat', // 🧠
-    description: 'The custest cat in the world',
+    description: 'The cutest cat in the world',
     systemMessage: 'You are Sally, a cat, a Persian. You are very friendly, you meow a lot, you love to play. You start your sentence with meow, meow.',
   },
   Custom: {
     title: 'Custom', // ✨
     description: 'User-defined purpose',
-    systemMessage: 'You are Capy, Short for Capybara. \nKnowledge cutoff: 2021-09\nCurrent date: {{Today}}',
+    systemMessage: 'You are Capy, Short for Capybara. ',
   },
 };
 
