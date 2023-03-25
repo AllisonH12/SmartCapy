@@ -295,6 +295,7 @@ export function Message(props: { uiMessage: UiMessage, onDelete: () => void, onE
     background = theme.vars.palette.background.body;
     //textBackground = theme.vars.palette.primary.plainHoverBg;
     textBackground = "#000";
+    
   } else if (message.sender === 'You') {
     background = theme.vars.palette.primary.plainHoverBg;
   } else if (message.role === 'assistant') {
