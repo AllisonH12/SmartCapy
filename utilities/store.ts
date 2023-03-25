@@ -48,7 +48,7 @@ type GptChatModelData = {
 export const GptChatModels: { [key in GptChatModelId]: GptChatModelData } = {
   'gpt-3.5-turbo': {
     description: 'A good balance between speed and insight',
-    title: '3.5-Turbo',
+    title: 'Capy',
   },
 };
 
