@@ -218,7 +218,7 @@ export default function Conversation() {
           }} onDoubleClick={handleListClear}>
             <NoSSR>
              {/* {GptChatModels[chatModelId]?.title || 'Select Model'} <span style={{ opacity: 0.5 }}> ·</span> {SystemPurposes[systemPurposeId].title} */}
-             
+             Capybara Chat
             </NoSSR>
           </Typography>
 
