@@ -13,7 +13,7 @@ import { GptChatModels, SystemPurposeId, SystemPurposes, useSettingsStore } from
 import { Message, UiMessage } from '../components/Message';
 import { NoSSR } from '../components/util/NoSSR';
 import { isValidOpenAIApiKey, Settings } from '../components/Settings';
-import logoImage from '../assets/logod.png';'; 
+import logoImage from '../assets/logod.png';
 
 
 /// UI Messages configuration
