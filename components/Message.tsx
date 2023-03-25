@@ -185,9 +185,9 @@ function CodeBlock({ codeBlock, theme, sx }: { codeBlock: CodeMessageBlock, them
 
 function prettyBaseModel(model: string): string {
   if (model.startsWith('gpt-4')) return 'turbo';
-  if (model.startsWith('gpt-3.5-turbo')) return 'cutest';
+  if (model.startsWith('gpt-3.5-turbo')) return ' ';
   return model;
-}s
+}
 
 function explainErrorInMessage(message: UiMessage) {
   let errorMessage: JSX.Element | null = null;
