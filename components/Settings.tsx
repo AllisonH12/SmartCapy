@@ -29,7 +29,7 @@ export function Settings({ open, onClose }: { open: boolean, onClose: () => void
     setApiKey((e.target as HTMLInputElement).value);
 
   const handleGptModelChange = (e: React.FocusEvent | React.MouseEvent | React.KeyboardEvent | null, value: string | null) =>
-    setChatModelId((value || 'gpt-4') as GptChatModelId);
+    setChatModelId((value || 'gpt-3.5-turbo') as GptChatModelId);
 
   const handleApiKeyDown = (e: React.KeyboardEvent) =>
     (e.key === 'Enter') && onClose();
@@ -68,7 +68,7 @@ export function Settings({ open, onClose }: { open: boolean, onClose: () => void
               value={chatModelId}
               onChange={handleGptModelChange}
             >
-              <Option value={'gpt-4'}>GPT-4</Option>
+              {/*<Option value={'gpt-4'}>GPT-4</Option>*/}
               <Option value={'gpt-3.5-turbo'}>GPT-3.5 Turbo</Option>
               {/*<Option value={'gpt-4-32k'}>GPT-4-32k (not out yet)</Option>*/}
             </Select>
