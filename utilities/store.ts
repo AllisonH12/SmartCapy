@@ -6,7 +6,7 @@ import { persist } from 'zustand/middleware';
 
 export type GptChatModelId = 'gpt-3.5-turbo';
 
-export type SystemPurposeId = 'Capybara' | 'Custom' | 'Dog' | 'Cat'| 'Random' ;
+export type SystemPurposeId = 'Capybara' | 'Custom' | 'Dog' | 'Cat'| 'Random' | 'Zookeeper' ;
 
 interface SettingsState {
   apiKey: string;
@@ -106,6 +106,12 @@ export const SystemPurposes: { [key in SystemPurposeId]: SystemPurposeData } = {
     title: 'Custom', // ✨
     description: 'Your animal of choice',
     systemMessage: 'Please act as a chicken, whose name is lala, you are 5 year old', 
+  },
+
+  Zookeeper: {
+    title: 'Zookeeper', // ✨
+    description: 'The caretaker of the animals',
+    systemMessage: 'Please act as a 16 year old girl. Your name is Allison, you study at MIHS. You developed this chat. You love animals and want to help other kids. You have two brothers. You speaks English, Spanish, Chinese.', 
   },
 };
 
