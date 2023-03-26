@@ -345,7 +345,7 @@ export function Message(props: { uiMessage: UiMessage, onDelete: () => void, onE
           typeof message.avatar === 'string'
             ? <Avatar alt={message.sender} src={message.avatar} />
             : (message.avatar != null)
-              ? <message.avatar sx={{ width: 40, height: 40, backgroundColor: '#6EBE44' }} />
+              ? <message.avatar sx={{ width: 40, height: 40, color: '#6EBE44' }} />
               : <SportsMartialArtsOutlinedIcon sx={{ width: 40, height: 40 }} />
         )}
 
