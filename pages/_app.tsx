@@ -68,6 +68,16 @@ export default function MyApp({ Component, emotionCache = clientSideEmotionCache
       <meta name="description" content="Smart Chat with Animals like Dog Chat, Capybara Chat, Cat Chat. Help kids to communicate and learn" />
         <meta name='viewport' content='initial-scale=1, width=device-width' />
         <link rel="canonical" href="https://chat.huangallison.com/" />
+        <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Capy Chat: Smart Chat with Animals with AI engine",
+        "url": "https://chat.huangallison.com/",
+        "description": "Smart Chat with Animals like Dog Chat, Capybara Chat, Cat Chat. Help kids to communicate and learn",
+       })}
+    </script>
+
       </Head>
       <CssVarsProvider defaultMode='light' theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
