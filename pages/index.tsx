@@ -208,7 +208,7 @@ export default function Conversation() {
           {/*    <DeleteOutlineOutlinedIcon />*/}
           {/*  </IconButton>*/}
           {/*)}*/}
-          <div onDoubleClick={handleListClear} style={{ marginTop: '3px', marginBottom: '3px', marginLeft: '10px', marginRight: '10px' }}>
+          <div onDoubleClick={handleListClear} style={{ marginTop: '1px', marginBottom: '1px', marginLeft: '10px', marginRight: '10px' }}>
           <Image src={logoImage} alt="logo" height={55} width={55} />
           </div>
 
@@ -219,6 +219,7 @@ export default function Conversation() {
             textAlign: 'center',
             fontFamily: theme.vars.fontFamily.code, fontSize: '1rem', lineHeight: 1.75,
             my: 'auto',
+            fontWeight: 'bold', 
             flexGrow: 1,
           }} onDoubleClick={handleListClear}>
             <NoSSR>
