@@ -67,6 +67,7 @@ export default function MyApp({ Component, emotionCache = clientSideEmotionCache
       <title>Capy Chat: the smartest chat for kids with autism</title>
       <meta name="description" content="Smart Chat with Animals like Dog Chat, Capybara Chat, Cat Chat. Help kids to communicate and learn" />
         <meta name='viewport' content='initial-scale=1, width=device-width' />
+        <link rel="canonical" href="https://chat.huangallison.com/" />
       </Head>
       <CssVarsProvider defaultMode='light' theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
