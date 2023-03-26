@@ -79,7 +79,7 @@ export const SystemPurposes: { [key in SystemPurposeId]: SystemPurposeData } = {
   Custom: {
     title: 'Custom', // ✨
     description: 'Add your own animal',
-    systemMessage: 'You are animal, you like ',
+    systemMessage: 'Please act as a {animal, replace with your choice} whose name is __', 
   },
 };
 
