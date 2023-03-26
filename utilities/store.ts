@@ -60,7 +60,7 @@ type SystemPurposeData = {
 }
 
 // Function to get a random item from an array
-function getRandomItem(array) {
+function getRandomItem(array: string[]): string {
   return array[Math.floor(Math.random() * array.length)];
 }
 
