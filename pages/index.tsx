@@ -209,7 +209,7 @@ export default function Conversation() {
           {/*  </IconButton>*/}
           {/*)}*/}
           <div onDoubleClick={handleListClear}>
-          <Image src={logoImage} alt="logo" height={48} width={48} />
+          <Image src={logoImage} alt="logo" height={60} width={60} />
           </div>
 
 
