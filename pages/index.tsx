@@ -198,7 +198,7 @@ export default function Conversation() {
           position: 'sticky', top: 0, zIndex: 20, p: 1,
           background: process.env.NODE_ENV === 'development'
             ? theme.vars.palette.danger.solidHoverBg
-            : theme.vars.palette.primary.solidHoverBg,
+            : theme.vars.palette.success.solidHoverBg,
           display: 'flex', flexDirection: 'row',
         }}>
           <IconButton variant='plain' color='neutral' onClick={handleDarkModeToggle}>
