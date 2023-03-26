@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { Box, Container, IconButton, List, Option, Select, Sheet, Stack, Typography, useColorScheme, useTheme } from '@mui/joy';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import Face6Icon from '@mui/icons-material/Face6';
+import Face6Icon from '@mui/icons-material/FaceRetouchingNatural';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import SmartToyOutlinedIcon from '@mui/icons-material/SmartToyOutlined';
 import SmartToyTwoToneIcon from '@mui/icons-material/SmartToyTwoTone';
