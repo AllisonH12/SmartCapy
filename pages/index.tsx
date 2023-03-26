@@ -210,7 +210,9 @@ export default function Conversation() {
           {/*    <DeleteOutlineOutlinedIcon />*/}
           {/*  </IconButton>*/}
           {/*)}*/}
-          <img src="../assets/logod.png" alt="logo" style={{height: '48px', marginRight: '10px'}} />
+          
+          <img src={logoImage} alt="logo" style={{height: '48px', marginRight: '10px'}} />
+
 
           <Typography sx={{
             textAlign: 'center',
