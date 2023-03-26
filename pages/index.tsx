@@ -4,8 +4,8 @@ import { Box, Container, IconButton, List, Option, Select, Sheet, Stack, Typogra
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import Face6Icon from '@mui/icons-material/FaceRetouchingNatural';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
-import SmartToyOutlinedIcon from '@mui/icons-material/SmartToyOutlined';
-import SmartToyTwoToneIcon from '@mui/icons-material/SmartToyTwoTone';
+import SmartToyOutlinedIcon from '@mui/icons-material/Pets';
+import SmartToyTwoToneIcon from '@mui/icons-material/Pets';
 
 import { ChatApiInput } from './api/chat';
 import { Composer } from '../components/Composer';
