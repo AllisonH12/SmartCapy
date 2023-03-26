@@ -208,7 +208,7 @@ export default function Conversation() {
           {/*    <DeleteOutlineOutlinedIcon />*/}
           {/*  </IconButton>*/}
           {/*)}*/}
-          <div onDoubleClick={handleListClear} style={{ marginTop: '1px', marginBottom: '1px', marginLeft: '10px', marginRight: '10px' }}>
+          <div onClick={handleListClear} style={{ marginTop: '1px', marginBottom: '1px', marginLeft: '10px', marginRight: '10px' }}>
           <Image src={logoImage} alt="logo" height={55} width={55} />
           </div>
 
@@ -221,7 +221,7 @@ export default function Conversation() {
             my: 'auto',
             fontWeight: 'bold', 
             flexGrow: 1,
-          }} onDoubleClick={handleListClear}>
+          }} onClick={handleListClear}>
             <NoSSR>
              {/* {GptChatModels[chatModelId]?.title || 'Select Model'} <span style={{ opacity: 0.5 }}> ·</span> {SystemPurposes[systemPurposeId].title} */}
             Capybara Chat
