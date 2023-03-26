@@ -212,7 +212,7 @@ export function Composer({ isDeveloper, disableSend, sendMessage }: { isDevelope
                       pr: isSpeechEnabled ? { xs: 4, md: 5 } : 0, // accounts for the microphone icon when supported
                     }} />
 
-          <Card color='primary' invertedColors variant='soft'
+          <Card color='success' invertedColors variant='soft'
                 sx={{
                   display: isDragging ? 'flex' : 'none',
                   position: 'absolute', bottom: 0, left: 0, right: 0, top: 0,
@@ -232,7 +232,7 @@ export function Composer({ isDeveloper, disableSend, sendMessage }: { isDevelope
           {isSpeechEnabled && (
             <IconButton
               onClick={handleMicClicked}
-              color={isRecordingSpeech ? 'warning' : 'primary'}
+              color={isRecordingSpeech ? 'warning' : 'success'}
               variant={isRecordingSpeech ? 'solid' : 'plain'}
               sx={{
                 position: 'absolute',
@@ -258,7 +258,7 @@ export function Composer({ isDeveloper, disableSend, sendMessage }: { isDevelope
                 </IconButton>
               )}
             </NoSSR>
-            <Button fullWidth variant='solid' color='primary' disabled={disableSend} onClick={handleSendClicked} endDecorator={<TelegramIcon />}>
+            <Button fullWidth variant='solid' color='success' disabled={disableSend} onClick={handleSendClicked} endDecorator={<TelegramIcon />}>
               Chat
             </Button>
           </Box>

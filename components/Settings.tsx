@@ -80,7 +80,7 @@ export function Settings({ open, onClose }: { open: boolean, onClose: () => void
             )}
           </NoSSR>
 
-          <Button variant='solid' color={isValidKey ? 'primary' : 'neutral'} sx={{ mt: 3 }} onClick={onClose}>
+          <Button variant='solid' color={isValidKey ? 'success' : 'neutral'} sx={{ mt: 3 }} onClick={onClose}>
             Close
           </Button>
 

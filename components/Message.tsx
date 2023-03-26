@@ -170,11 +170,11 @@ function CodeBlock({ codeBlock, theme, sx }: { codeBlock: CodeMessageBlock, them
     display: 'block', fontWeight: 500, background: theme.vars.palette.background.level1,
     '&:hover > button': { opacity: 1 },
   }}>
-    <IconButton variant='plain' color='primary' onClick={handleCopyToClipboard} sx={{ position: 'absolute', top: 0, right: 0, zIndex: 10, p: 0.5, opacity: 0, transition: 'opacity 0.3s' }}>
+    <IconButton variant='plain' color='success' onClick={handleCopyToClipboard} sx={{ position: 'absolute', top: 0, right: 0, zIndex: 10, p: 0.5, opacity: 0, transition: 'opacity 0.3s' }}>
       <ContentCopyIcon />
     </IconButton>
     {showRunIcon && (
-      <IconButton variant='plain' color='primary' onClick={handleToggleSandpack} sx={{ position: 'absolute', top: 0, right: 50, zIndex: 10, p: 0.5, opacity: 0, transition: 'opacity 0.3s' }}>
+      <IconButton variant='plain' color='success' onClick={handleToggleSandpack} sx={{ position: 'absolute', top: 0, right: 50, zIndex: 10, p: 0.5, opacity: 0, transition: 'opacity 0.3s' }}>
         {showSandpack ? <StopOutlinedIcon /> : <PlayArrowOutlinedIcon />}
       </IconButton>
     )}
@@ -297,7 +297,7 @@ export function Message(props: { uiMessage: UiMessage, onDelete: () => void, onE
     textBackground = "#222";
 
   } else if (message.sender === 'You') {
-    background = theme.vars.palette.primary.plainHoverBg;
+    background = theme.vars.palette.success.plainHoverBg;
   } else if (message.role === 'assistant') {
     background = (isAssistantError && !errorMessage) ? theme.vars.palette.danger.softBg : theme.vars.palette.background.body;
   }
@@ -338,7 +338,7 @@ export function Message(props: { uiMessage: UiMessage, onDelete: () => void, onE
              onClick={event => setMenuAnchor(event.currentTarget)}>
 
         {isHovering ? (
-          <IconButton variant='soft' color='primary'>
+          <IconButton variant='soft' color='success'>
             <MoreVertIcon />
           </IconButton>
         ) : (
@@ -388,7 +388,7 @@ export function Message(props: { uiMessage: UiMessage, onDelete: () => void, onE
 
       {isEditing ? (
 
-        <Textarea variant='soft' color='primary' autoFocus minRows={1}
+        <Textarea variant='soft' color='success' autoFocus minRows={1}
                   value={editedText} onChange={handleEditTextChanged} onKeyDown={handleEditKeyPressed}
                   sx={{ ...chatFontCss, flexGrow: 1 }} />
 
