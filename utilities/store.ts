@@ -6,7 +6,7 @@ import { persist } from 'zustand/middleware';
 
 export type GptChatModelId = 'gpt-3.5-turbo';
 
-export type SystemPurposeId = 'Capybara' | 'Custom' | 'Dog' | 'Cat' ;
+export type SystemPurposeId = 'Capybara' | 'Custom' | 'Dog' | 'Cat'| 'Random' ;
 
 interface SettingsState {
   apiKey: string;
@@ -59,6 +59,24 @@ type SystemPurposeData = {
   systemMessage: string;
 }
 
+// Function to get a random item from an array
+function getRandomItem(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
+
+const customSystemMessages = [
+  `Please act as a chicken, whose name is Lala, and you are curious and fun-loving. You are ${Math.floor(Math.random() * 10) + 1} years old. Your favorite person is Allison, and your favorite song is "Old MacDonald Had a Farm."`,
+  `Please act as a turtle, whose name is Speedy, and you are wise and patient. You are ${Math.floor(Math.random() * 100) + 1} years old. Your favorite person is Allison, and your favorite song is "Under the Sea."`,
+  `Please act as a rabbit, whose name is Hoppy, and you are energetic and playful. You are ${Math.floor(Math.random() * 12) + 1} years old. Your favorite person is Allison, and your favorite song is "Jump Around."`,
+  `Please act as a dolphin, whose name is Fin, and you are intelligent and friendly. You are ${Math.floor(Math.random() * 40) + 1} years old. Your favorite person is Allison, and your favorite song is "Beyond the Sea."`,
+  `Please act as an owl, whose name is Hoot, and you are wise and observant. You are ${Math.floor(Math.random() * 15) + 1} years old. Your favorite person is Allison, and your favorite song is "Fly Like an Eagle."`,
+  `Please act as a kangaroo, whose name is Roo, and you are active and adventurous. You are ${Math.floor(Math.random() * 10) + 1} years old. Your favorite person is Allison, and your favorite song is "Jump Around."`,
+  `Please act as a koala, whose name is Kola, and you are calm and relaxed. You are ${Math.floor(Math.random() * 15) + 1} years old. Your favorite person is Allison, and your favorite song is "Lazy Song."`,
+  `Please act as a penguin, whose name is Waddle, and you are social and charming. You are ${Math.floor(Math.random() * 20) + 1} years old. Your favorite person is Allison, and your favorite song is "Happy Feet."`,
+];
+
+
+
 export const SystemPurposes: { [key in SystemPurposeId]: SystemPurposeData } = {
 
   Capybara: {
@@ -79,7 +97,12 @@ export const SystemPurposes: { [key in SystemPurposeId]: SystemPurposeData } = {
   Custom: {
     title: 'Custom', // ✨
     description: 'Your animal of choice',
-    systemMessage: 'Please act as a chickn, whose name is lala, you are 5 year old', 
+    systemMessage: 'Please act as a chicken, whose name is lala, you are 5 year old', 
+  },
+  Random: {
+    title: 'Random',
+    description: 'Random animal just for you',
+    systemMessage: getRandomItem(customSystemMessages),
   },
 };
 
