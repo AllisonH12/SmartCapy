@@ -196,7 +196,7 @@ export default function Conversation() {
 
         {/* Application Bar */}
         <Sheet variant='solid' invertedColors sx={{
-          position: 'sticky', top: 0, zIndex: 20, p: 1,
+          position: 'sticky', top: 0, zIndex: 20, p: 0,
           background: process.env.NODE_ENV === 'development'
             ? theme.vars.palette.danger.solidHoverBg
             : theme.vars.palette.success.solidHoverBg,
