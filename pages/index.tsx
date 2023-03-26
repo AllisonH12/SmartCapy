@@ -14,6 +14,7 @@ import { Message, UiMessage } from '../components/Message';
 import { NoSSR } from '../components/util/NoSSR';
 import { isValidOpenAIApiKey, Settings } from '../components/Settings';
 import logoImage from '../assets/logod.png';
+import Image from 'next/image';
 
 
 /// UI Messages configuration
@@ -210,8 +211,9 @@ export default function Conversation() {
           {/*    <DeleteOutlineOutlinedIcon />*/}
           {/*  </IconButton>*/}
           {/*)}*/}
-          
-          <img src={logoImage} alt="logo" style={{height: '48px', marginRight: '10px'}} />
+
+          <Image src={logoImage} alt="logo" height={48} width={48} />
+
 
 
           <Typography sx={{
