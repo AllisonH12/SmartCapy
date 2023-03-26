@@ -208,9 +208,10 @@ export default function Conversation() {
           {/*    <DeleteOutlineOutlinedIcon />*/}
           {/*  </IconButton>*/}
           {/*)}*/}
-          <div onDoubleClick={handleListClear} sx={{ my: '3px' , mx: '10px'}}>
+          <div onDoubleClick={handleListClear} style={{ marginTop: '3px', marginBottom: '3px', marginLeft: '10px', marginRight: '10px' }}>
           <Image src={logoImage} alt="logo" height={55} width={55} />
           </div>
+
 
 
 
