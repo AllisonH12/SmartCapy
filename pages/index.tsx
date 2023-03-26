@@ -208,8 +208,9 @@ export default function Conversation() {
           {/*    <DeleteOutlineOutlinedIcon />*/}
           {/*  </IconButton>*/}
           {/*)}*/}
-
+          <div onDoubleClick={handleListClear}>
           <Image src={logoImage} alt="logo" height={48} width={48} />
+          </div>
 
 
 
@@ -231,10 +232,10 @@ export default function Conversation() {
             <SettingsOutlinedIcon />
           </IconButton>
           */}
-
           <IconButton variant='plain' color='neutral' onClick={handleDarkModeToggle}>
             <DarkModeIcon />
           </IconButton>
+
 
         </Sheet>
 
