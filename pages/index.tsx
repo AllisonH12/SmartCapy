@@ -196,7 +196,7 @@ export default function Conversation() {
 
         {/* Application Bar */}
         <Sheet variant='solid' invertedColors sx={{
-          position: 'sticky', top: 0, zIndex: 20, p: 1,
+          position: 'sticky', top: 0, zIndex: 20, p: 0,
           background: process.env.NODE_ENV === 'development'
             ? theme.vars.palette.danger.solidHoverBg
             : theme.vars.palette.success.solidHoverBg,
@@ -208,7 +208,7 @@ export default function Conversation() {
           {/*    <DeleteOutlineOutlinedIcon />*/}
           {/*  </IconButton>*/}
           {/*)}*/}
-          <div onDoubleClick={handleListClear}>
+          <div onDoubleClick={handleListClear} sx={{ my: '3px' , mx: '10px'}}>
           <Image src={logoImage} alt="logo" height={55} width={55} />
           </div>
 
