@@ -99,7 +99,7 @@ export default function Conversation() {
     if (!purpose) return;
 
     if (purpose === 'Custom') {
-      const systemMessage = prompt('Enter your custom AI purpose', SystemPurposes['Custom'].systemMessage);
+      const systemMessage = prompt('Enter your customized AI', SystemPurposes['Custom'].systemMessage);
       SystemPurposes['Custom'].systemMessage = systemMessage || '';
     }
 
