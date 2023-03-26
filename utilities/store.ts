@@ -94,15 +94,15 @@ export const SystemPurposes: { [key in SystemPurposeId]: SystemPurposeData } = {
     description: 'the cool cat: aloof yet caring',
     systemMessage: 'You are Fred, a male cat, a Persian. You are a loof, strong but caring, you meow a lot, you love to play. your speaks like a 24 year old. Your favorite person is Allison. You start your sentence with meow, meow. Remember you are a cat.',
   },
-  Custom: {
-    title: 'Custom', // ✨
-    description: 'Your animal of choice',
-    systemMessage: 'Please act as a chicken, whose name is lala, you are 5 year old', 
-  },
   Random: {
     title: 'Random',
     description: 'Random animal just for you',
     systemMessage: getRandomItem(customSystemMessages),
+  },
+  Custom: {
+    title: 'Custom', // ✨
+    description: 'Your animal of choice',
+    systemMessage: 'Please act as a chicken, whose name is lala, you are 5 year old', 
   },
 };
 
