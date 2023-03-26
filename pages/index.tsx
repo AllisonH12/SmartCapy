@@ -196,7 +196,7 @@ export default function Conversation() {
 
         {/* Application Bar */}
         <Sheet variant='solid' invertedColors sx={{
-          position: 'sticky', top: 0, zIndex: 20, p: 0,
+          position: 'sticky', top: 0, zIndex: 20, p: 1,
           background: process.env.NODE_ENV === 'development'
             ? theme.vars.palette.danger.solidHoverBg
             : theme.vars.palette.success.solidHoverBg,
@@ -209,7 +209,7 @@ export default function Conversation() {
           {/*  </IconButton>*/}
           {/*)}*/}
           <div onDoubleClick={handleListClear}>
-          <Image src={logoImage} alt="logo" height={60} width={60} />
+          <Image src={logoImage} alt="logo" height={55} width={55} />
           </div>
 
 
