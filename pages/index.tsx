@@ -202,9 +202,6 @@ export default function Conversation() {
             : theme.vars.palette.success.solidHoverBg,
           display: 'flex', flexDirection: 'row',
         }}>
-          <IconButton variant='plain' color='neutral' onClick={handleDarkModeToggle}>
-            <DarkModeIcon />
-          </IconButton>
 
           {/*{!isEmpty && (*/}
           {/*  <IconButton variant='plain' color='neutral' disabled={isDisabledCompose} onClick={onClearConversation}>*/}
@@ -234,6 +231,11 @@ export default function Conversation() {
             <SettingsOutlinedIcon />
           </IconButton>
           */}
+
+          <IconButton variant='plain' color='neutral' onClick={handleDarkModeToggle}>
+            <DarkModeIcon />
+          </IconButton>
+
         </Sheet>
 
         {/* Chat */}
