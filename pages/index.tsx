@@ -250,7 +250,9 @@ export default function Conversation() {
           {noMessages ? (
             <Stack direction='column' sx={{ alignItems: 'center', justifyContent: 'center', minHeight: '50vh' }}>
               <Box>
-              <Image src={capyImage} alt="logo" height={100} width={100} />
+              <div onClick={handleListClear} style={{ display: 'flex', justifyContent: 'center' }}>
+                <Image src={capyImage} alt="logo" height={200} width={200} />
+              </div>
                 <Typography level='body2' color='neutral'>
                 You are chatting with a 
                 </Typography>
