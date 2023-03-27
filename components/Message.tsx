@@ -293,8 +293,8 @@ export function Message(props: { uiMessage: UiMessage, onDelete: () => void, onE
   let textBackground: string | undefined = undefined;
   if (message.role === 'system') {
     background = theme.vars.palette.background.body;
-    textBackground = theme.vars.palette.primary.plainHoverBg;
-    //textBackground = "#222";
+    //textBackground = theme.vars.palette.primary.plainHoverBg;
+    textBackground = "#222";
 
   } else if (message.sender === 'You') {
     background = theme.vars.palette.success.plainHoverBg;
@@ -350,7 +350,7 @@ export function Message(props: { uiMessage: UiMessage, onDelete: () => void, onE
         )}
 
         {message.role === 'system' && (
-          <Typography level='body2' color='primary'>...</Typography>
+          <Typography level='body2' color='neutral'>...</Typography>
         )}
         {message.role === 'assistant' && (
           <Tooltip title={message.model} variant='solid'>
