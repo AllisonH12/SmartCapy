@@ -14,6 +14,7 @@ import { Message, UiMessage } from '../components/Message';
 import { NoSSR } from '../components/util/NoSSR';
 import { isValidOpenAIApiKey, Settings } from '../components/Settings';
 import logoImage from '../assets/logod.png';
+import capyImage from '../assets/capychat.jpeg';
 import Image from 'next/image';
 
 
@@ -249,7 +250,7 @@ export default function Conversation() {
           {noMessages ? (
             <Stack direction='column' sx={{ alignItems: 'center', justifyContent: 'center', minHeight: '50vh' }}>
               <Box>
-              <Image src={logoImage} alt="logo" height={55} width={55} />
+              <Image src={capyImage} alt="logo" height={100} width={100} />
                 <Typography level='body2' color='neutral'>
                 You are chatting with a 
                 </Typography>
