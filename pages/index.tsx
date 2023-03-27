@@ -13,6 +13,7 @@ import { GptChatModels, SystemPurposeId, SystemPurposes, useSettingsStore } from
 import { Message, UiMessage } from '../components/Message';
 import { NoSSR } from '../components/util/NoSSR';
 import { isValidOpenAIApiKey, Settings } from '../components/Settings';
+import logoImage from '../assets/logod.png';
 import capyImage from '../assets/capy.png';
 import Image from 'next/image';
 
@@ -209,7 +210,7 @@ export default function Conversation() {
           {/*  </IconButton>*/}
           {/*)}*/}
           <div onClick={handleListClear} style={{ marginTop: '1px', marginBottom: '1px', marginLeft: '10px', marginRight: '10px' }}>
-          <Image src={capyImage} alt="logo" height={55} width={55} />
+          <Image src={logoImage} alt="logo" height={55} width={55} />
           </div>
 
 
