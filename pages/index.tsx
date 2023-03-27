@@ -14,7 +14,7 @@ import { Message, UiMessage } from '../components/Message';
 import { NoSSR } from '../components/util/NoSSR';
 import { isValidOpenAIApiKey, Settings } from '../components/Settings';
 import logoImage from '../assets/logod.png';
-import capyImage from '../assets/capychat.jpeg';
+import capyImage from '../assets/capy.png';
 import Image from 'next/image';
 
 
