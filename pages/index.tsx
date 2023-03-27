@@ -249,7 +249,8 @@ export default function Conversation() {
           {noMessages ? (
             <Stack direction='column' sx={{ alignItems: 'center', justifyContent: 'center', minHeight: '50vh' }}>
               <Box>
-                <Typography level='body3' color='neutral'>
+              <Image src={logoImage} alt="logo" height={55} width={55} />
+                <Typography level='body2' color='neutral'>
                 You are chatting with a 
                 </Typography>
                 <NoSSR>
