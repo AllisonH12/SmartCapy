@@ -350,7 +350,7 @@ export function Message(props: { uiMessage: UiMessage, onDelete: () => void, onE
         )}
 
         {message.role === 'system' && (
-          <Typography level='body2' color='neutral'>...</Typography>
+          <Typography level='body2' color='success'>...</Typography>
         )}
         {message.role === 'assistant' && (
           <Tooltip title={message.model} variant='solid'>
