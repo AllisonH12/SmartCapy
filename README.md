@@ -5,6 +5,12 @@ You can chat with a capybara, dog, cat or any random animals and have fun.
 Go to: https://capychat.co to try it out. 
 
 
+How to run it: 
+cd nextjs-chatgpt-app
+npm install
+npm run dev
+
+
 Future plan:
 
 Text-to-Image: 

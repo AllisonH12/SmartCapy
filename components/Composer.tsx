@@ -174,7 +174,7 @@ export function Composer({ isDeveloper, disableSend, sendMessage }: { isDevelope
 
         {/* Vertical Buttons Bar */}
         <Box>
-
+        {/*
           <IconButton variant='plain' color='neutral' onClick={handleOpenAttachmentPicker} sx={{ ...hideOnDesktop }}>
             <PostAddIcon />
           </IconButton>
@@ -184,9 +184,9 @@ export function Composer({ isDeveloper, disableSend, sendMessage }: { isDevelope
               Attach
             </Button>
           </Tooltip>
-
+          */}
           <Box sx={{ mt: { xs: 1, md: 2 } }} />
-
+          {/*
           <IconButton variant='plain' color='neutral' onClick={pasteFromClipboard} sx={{ ...hideOnDesktop }}>
             <ContentPasteGoIcon />
           </IconButton>
@@ -195,7 +195,7 @@ export function Composer({ isDeveloper, disableSend, sendMessage }: { isDevelope
           </Button>
 
           <input type='file' multiple hidden ref={attachmentFileInputRef} onChange={handleAttachmentChanged} />
-
+        */}
         </Box>
 
         {/* Message edit box, with Drop overlay */}
