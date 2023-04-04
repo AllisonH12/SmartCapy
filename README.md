@@ -20,6 +20,7 @@ Image-to-Text:
 using GPT-4 API. 
 
 
-This is a fork from Next.js ChatGPT.  
-https://github.com/enricoros/nextjs-chatgpt-app
+Acknowledgement
+OpenAI: https://platform.openai.com/
+This is a fork from Next.js ChatGPT: https://github.com/enricoros/nextjs-chatgpt-app
 
