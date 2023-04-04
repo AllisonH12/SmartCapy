@@ -67,7 +67,7 @@ export default function MyApp({ Component, emotionCache = clientSideEmotionCache
       <title>Capy Chat: the smartest capybara for kids to chat with</title>
       <meta name="description" content="Smart Chat with Animals like Dog Chat, Capybara Chat, Cat Chat. Help kids to communicate and learn" />
         <meta name='viewport' content='initial-scale=1, width=device-width' />
-        <link rel="canonical" href="https://chat.huangallison.com/" />
+        <link rel="canonical" href="https://capychat.co/" />
         <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
