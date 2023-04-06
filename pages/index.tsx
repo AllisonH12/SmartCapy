@@ -265,7 +265,7 @@ export default function Conversation() {
                     ))}
                   </Select>
                   <Typography level='body2' sx={{ mt: 2, minWidth: 260 }}>
-                    {SystemPurposes[systemPurposeId].description}. Try the new <Link href='https://draw.capychat.com' target='_blank'>drawing app</Link>!
+                    {SystemPurposes[systemPurposeId].description}. Try the new <a href='https://draw.capychat.com' target='_blank'>drawing app</a>!
                   </Typography>
                 </NoSSR>
               </Box>
