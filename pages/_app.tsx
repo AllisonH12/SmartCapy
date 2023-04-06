@@ -73,7 +73,7 @@ export default function MyApp({ Component, emotionCache = clientSideEmotionCache
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Capy Chat: Smart Chat with Animals with AI engine",
-        "url": "https://chat.huangallison.com/",
+        "url": "https://capychat.co/",
         "description": "Smart Chat with Animals like Dog Chat, Capybara Chat, Cat Chat. Help kids to communicate and learn",
        })}
     </script>
