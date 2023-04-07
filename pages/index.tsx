@@ -265,7 +265,7 @@ export default function Conversation() {
                     ))}
                   </Select>
                   <Typography level='body2' sx={{ mt: 2, minWidth: 260 }}>
-                    {SystemPurposes[systemPurposeId].description}. Try the new sketch <a href='https://draw.capychat.co' target='_blank'>CapyDraw</a>.
+                    {SystemPurposes[systemPurposeId].description}. Try <a href='https://draw.capychat.co' target='_blank'>CapyDraw</a>.
                   </Typography>
                 </NoSSR>
               </Box>
