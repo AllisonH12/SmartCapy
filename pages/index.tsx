@@ -266,6 +266,10 @@ export default function Conversation() {
                   </Select>
                   <Typography level='body2' sx={{ mt: 2, minWidth: 260 }}>
                     {SystemPurposes[systemPurposeId].description}. 
+                
+                  </Typography>
+                  <Typography level='body2' sx={{ mt: 2, minWidth: 260 }}>
+              
                     Try <a href='https://draw.capychat.co' target='_blank'>CapyDraw</a>.
                   </Typography>
                 </NoSSR>
