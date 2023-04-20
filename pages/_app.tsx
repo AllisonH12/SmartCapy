@@ -7,7 +7,6 @@ import { CacheProvider, EmotionCache } from '@emotion/react';
 import { CssBaseline, CssVarsProvider, extendTheme } from '@mui/joy';
 import { Inter, JetBrains_Mono } from 'next/font/google';
 
-
 // Application Theme (JoyUI = MUI) & Fonts (Next.js)
 
 const inter = Inter({
