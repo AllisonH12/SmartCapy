@@ -22,7 +22,7 @@ using GPT-4 API.
 
 Acknowledgement
 
-
+I used OpenAI API to come up with prompts and to help me code. 
 OpenAI: https://platform.openai.com/
 
 
