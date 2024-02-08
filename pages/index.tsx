@@ -271,7 +271,7 @@ export default function Conversation() {
                   <Typography level='body2' sx={{ mt: 2, minWidth: 260 }}>
               
                     Try <a href='https://draw.capychat.co' target='_blank'>CapyDraw</a>,  
-                    <a href='https://github.huangallison.com/capygame.html' target='_blank'>CapyGame</a>  
+                    <a href='https://github.huangallison.com/capygame.html' target='_blank'> CapyGame </a>  
                     or <a href='https://github.huangallison.com/capy3d.html' target='_blank'>Capybara in 3D</a>!
                   </Typography>
                 </NoSSR>
