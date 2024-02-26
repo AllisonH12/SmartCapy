@@ -272,7 +272,8 @@ export default function Conversation() {
               
                  Try <a href='https://draw.capychat.co'>CapyDraw</a>,&nbsp;
                     <a href='https://github.huangallison.com/capygame.html'>CapyGame</a>&nbsp;
-                    or build your own CapyChat Toy <a href='https://github.com/AllisonH12/capytoy'>CapyPi</a>!
+                    or <BR></BR> 
+                    build your own CapyChat Toy <a href='https://github.com/AllisonH12/capytoy'>CapyPi</a>!
                   </Typography>
                 </NoSSR>
               </Box>
