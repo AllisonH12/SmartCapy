@@ -271,9 +271,11 @@ export default function Conversation() {
                   <Typography level='body2' sx={{ mt: 2, minWidth: 260 }}>
                  Try <a href='https://draw.capychat.co'>CapyDraw</a>,&nbsp;
                     <a href='https://github.huangallison.com/capygame.html'>CapyGame</a>&nbsp;
+                    <a href='https://github.huangallison.com/cuteornot.html'>CapyvsDog</a>&nbsp;
+                    <a href='https://github.huangallison.com/capy3d.html'>Capy3D</a>&nbsp;
                   </Typography>
                   <Typography level='body2' sx={{ mt: 2, minWidth: 260 }}>
-                 Build a CapyChat Toy <a href='https://github.com/AllisonH12/capytoy'>CapyPi</a>!
+                 Want a CapyChat Toy? Build <a href='https://github.com/AllisonH12/capytoy'>CapyPi</a>!
                   </Typography>
                 </NoSSR>
               </Box>
